@@ -12,7 +12,7 @@ The EMS system additionally outlines how the PV system at QUT operates and what 
 Before the schematics and floor plans for QUT's buildings were made available, an approximate small office area was modelled in AutoCAD with offices of 5 \si{m^2}. The purpose of this simulation was to analyse approximate lighting loads for the environment.   
 
 \begin{figure}[H]
-\hfill\includegraphics[width = 120mm]{images/Rough_Floorplan}\hspace*{\fill}
+\hfill\includegraphics[width = 100mm]{images/Rough_Floorplan}\hspace*{\fill}
 \caption{Temporary Office Floor Plan Design} 
 \label{fig:RoughFloorplan}
 \end{figure} 
@@ -33,6 +33,26 @@ Food Preparation Room & 240 \\ \hline
 Technical Office Room & 320 \\ \hline
 Visually Difficult Work & 500 \\ \hline
 \end{tabular}
-\caption{Lighting Requires as per AS/NZS Standards \cite{StandardsAustralia2006}}
+\caption{Lighting Requirements as per AS/NZS Standards \cite{StandardsAustralia2006}}
 \label{LightingRequirements}
 \end{table}
+
+These two data points were used for the initial draft planning of designs. This is not an accurate representation of a building, it was a starting point to work from once the more accurate schematics and plans were accessed. The next stage was to import the simple floor plan CAD file into Dialux4.13. This is a lighting design software solution to model options and predict approximate load demands that the LVDC system will be required to power.  
+
+\paragraph{}
+Through personal experience in building services design, I had an approximate idea of what amounts of lighting would be required for a 5 \si{m^2} room. I also knew that I would use LED down lights for simplicity and affordability.The difficult part is finding commercially available products that operate at a voltage level at either 48 \si{V DC} when the voltage drop over cabling is removed or at another level where an efficient DC to DC converter could be used. My goal was to have the average lux between 300 \si{lux} to 400 \si{lux}. This value was chosen as a technical office is an accurate assessment of most corporate buildings. As seen in Table 4 below, 7 20 \si{w} LED down lights reaches this specification.     
+
+\begin{table}[!ht]
+\centering
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Down Light Wattage}} & \multicolumn{1}{l|}{\textbf{Quantity}} & \multicolumn{1}{l|}{\textbf{Max Lux}} & \multicolumn{1}{l|}{\textbf{Min Lux}} & \multicolumn{1}{l|}{\textbf{Average Lux}} \\ \hline
+11 & 6 & 114 & 3.8 & 73 \\ \hline
+11 & 10 & 180 & 7 & 114 \\ \hline
+20 & 8 & 680 & 16 & 383 \\ \hline
+20 & 7 & 677 & 12 & 344 \\ \hline
+\end{tabular}
+\caption{Dialux Outputs of Draft Floor Plan}
+\label{draftFloorPlanDialuxOutputs}
+\end{table} 

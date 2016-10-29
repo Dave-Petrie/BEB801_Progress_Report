@@ -43,6 +43,17 @@ overall system \cite{Starke2008b}.
 \paragraph{}
 DC power is currently restricted to special applications such as telecommunications, electric vehciles and high-voltage direct current (HVDC) transmission \cite{Salomonsson2007}. Low-voltage DC power systems at 48 \si{V DC} has been used fairly widely with telecommunications systems but is recently facing issues due to the high power requirements of computer system upgrades \cite{Salomonsson2007}. Studies have shown that the 48 \si{V DC} system still remains more efficienct than a 270 \si{V DC} or 200 \si{V AC} but further investigation needs to be done into 230 \si{V DC} and 325 \si{V DC} through retrofitting existing low voltage AC installations \cite{Salomonsson2007}. Photo-voltatic generators are used frequently for these forms of power distribution systems as it can be powered directly or use simple DC to DC converters for different devices. Utilising a DC distribution system makes it easier to incorporate local power generation. This reduces costs and local power us unaffected by issues with power grid \cite{Starke2008a}. 
 
+\subsubsection{Low Voltage Direct Current in Telecommunications}
+
+\paragraph{}
+Using low voltage energy distribution grids for high-speed communications networking which can open up the possibility to utilities for expandsion of widespread local area networks \cite{Waldeck1998}. This could be services such as telephony and internet access without the necessity of additional cabling \cite{Waldeck1998}. Firstly, this voltage level is chosen due to it being marginally under the maximum for low voltage power and still considered a "safe low voltage". Additionally, this voltage level could be backed up by battery systems with four 12 \si{V} batteries in series. Many data centres or communications rooms for corporate buildings will establish arrays of 48 \si{V} battery banks \cite{website:48VTelecomms}. A solution for areas without large enough storage areas for are limited and power demands are low a single 12 \si{v} battery with a 12 \si{V} to 48 \si{V} boost converter can be used \cite{website:48VTelecomms}. This setup is shown in Figure \ref{fig:48VTelecomms}. Additionally, due to this nature of power telecomms, standalone systems are becoming a more suitable means of supply \cite{Ribeiro2009}. Photovoltaic arrays, due to their DC source nature, could be used with a DC to DC boost converter and regulator to power these systems.   
+
+\begin{figure}[H]
+\hfill\includegraphics[width = 100mm]{images/12V_Telecomms}\hspace*{\fill}
+\caption{Single Battery Communications Room \cite{website:48VTelecomms}}
+\label{fig:48VTelecomms}
+\end{figure}   
+
 \subsubsection{Existing Power Distribution Systems}
 
 \paragraph{}
@@ -73,7 +84,10 @@ In order to increase efficiency of power systems through utilising a low voltage
 \subsubsection{Photo-Voltaic Arrays and DC Arcing}
 
 \paragraph{}
-With the popularity of PV systems increasing, the risk of DC arc faults are being analysed further \cite{Spooner2008}. PV arrays and power systems are being designed with converters boosting voltages to 800 \si{V DC} and 1000 \si{V DC}. This is being done for efficiency and cost reduction purposes however it leads to large amounts of stress on insulation systems and arc faults developing \cite{Spooner2008}. This causes more safety concerns than traditional AC systems. There are three major causes of arc fault risk; high DC voltage, high DC current and large distribution of DC wiring \cite{website:DC-Arching}.        
+With the popularity of PV systems increasing, the risk of DC arc faults are being analysed further \cite{Spooner2008}. PV arrays and power systems are being designed with converters boosting voltages to 800 \si{V DC} and 1000 \si{V DC}. This is being done for efficiency and cost reduction purposes however it leads to large amounts of stress on insulation systems and arc faults developing \cite{Spooner2008}. This causes more safety concerns than traditional AC systems. There are three major causes of arc fault risk; high DC voltage, high DC current and large distribution of DC wiring \cite{website:DC-Arching}.
+
+\paragraph{}
+Photovoltaic generators are non-linear sources that vary with intensity of sunlight and behave mainly as a DC current source \cite{Ribeiro2009}.         
 
 \subsubsection{Electrical Safety Mechanisms}
 
